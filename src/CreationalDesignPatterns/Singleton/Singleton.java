@@ -1,4 +1,4 @@
-package CreationalDesignPatterns;
+package CreationalDesignPatterns.Singleton;
 
 public class Singleton {
     private static Singleton instance;
@@ -17,5 +17,8 @@ public class Singleton {
     }
     public void setSomeName(String someName) {
         this.someName = someName;
+    }
+    public String toString(){
+        return someName;
     }
 }

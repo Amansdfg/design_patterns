@@ -1,6 +1,6 @@
-import CreationalDesignPatterns.Singleton.Singleton;
+package CreationalDesignPatterns.Singleton;
 
-public class Main {
+public class TestSingleton {
     public static void main(String[] args) {
         Singleton singleton = Singleton.getInstance();
         System.out.println(singleton);
