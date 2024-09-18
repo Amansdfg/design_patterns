@@ -7,7 +7,10 @@ public class Test {
         if(roundHole.fits(roundPeg)){
             System.out.println("Round peg r5 fits round hole r5.");
         }
+
+
         SquarePeg squarePeg=new SquarePeg(5);
+        SquarePeg squarePeg3=new SquarePeg(3);
         SquarePeg squarePeg2=new SquarePeg(10);
         SquarePegAdapter roundPegAdapter=new SquarePegAdapter(squarePeg);
         SquarePegAdapter roundPegAdapter2=new SquarePegAdapter(squarePeg2);
