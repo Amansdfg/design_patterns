@@ -1,6 +1,5 @@
 package CreationalDesignPatterns.Singleton;
 
-import CreationalDesignPatterns.Asa.Laptop;
 
 public class TestSingleton {
     public static void main(String[] args) {
