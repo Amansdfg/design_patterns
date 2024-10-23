@@ -13,7 +13,6 @@ abstract class CoffeeDecorator implements Coffee {
 
     @Override
     public double cost() {
-
         return decoratorCoffee.cost();
 
     }
