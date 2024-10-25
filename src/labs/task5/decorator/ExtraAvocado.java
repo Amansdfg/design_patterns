@@ -11,7 +11,7 @@ public class ExtraAvocado extends MealDecorator{
 
     @Override
     public double getCost() {
-        return cost;
+        return decoratedMeal.getCost()+ cost;
     }
 
     @Override
