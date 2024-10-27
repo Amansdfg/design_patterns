@@ -39,6 +39,7 @@ public class Main {
         }
     }
     static long binary(long[] arr, long key) {
+        assert
         int low = 0;
         int high = arr.length-1;
 
