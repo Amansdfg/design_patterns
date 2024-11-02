@@ -3,6 +3,7 @@ import labs.Task4.Adapter.InternalOrderService;
 import labs.Task4.Adapter.OrderService;
 import labs.Tast3.Meal;
 
+//Facade is a structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.
 
 public class RestaurantFacade {
     private OrderService orderService;
