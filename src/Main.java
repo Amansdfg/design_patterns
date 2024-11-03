@@ -8,6 +8,11 @@ public class Main {
 
         Scanner scanner=new Scanner(System.in);
         int n=scanner.nextInt();
+
+
+
+
+
         int[] numbers=new int[n];
         int x=scanner.nextInt();
         for (int i = 0; i < n; i++) {
