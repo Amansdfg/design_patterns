@@ -9,6 +9,7 @@ public class RealPremiumFeatures implements PremiumFeatures {
 
     @Override
     public void viewExclusivePromotions() {
+
         System.out.println("Displaying exclusive promotions for members...");
     }
 }
