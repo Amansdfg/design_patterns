@@ -33,6 +33,8 @@ public class Meal {
     public String toString(){
         return "Meal [mainDish= "+mainDish+", side= "+side+", drink= "+drink+", dessert= "+dessert+"]";
     }
+
+
     public static class MealBuilder{
         private String mainDish;
         private String side;
