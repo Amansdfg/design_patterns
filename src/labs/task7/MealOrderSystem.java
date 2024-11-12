@@ -7,6 +7,7 @@ import labs.task7.Command.AddItemCommand;
 import labs.task7.Command.Command;
 import labs.task7.Command.OrderManager;
 import labs.task7.Command.RemoveItemCommand;
+import labs.task7.Mediator.MealOrderMediator;
 
 public class MealOrderSystem {
     public static void main(String[] args) {
@@ -20,15 +21,21 @@ public class MealOrderSystem {
         Meal myMeal = new Meal();
         OrderManager orderManager = new OrderManager();
 
+
+
+        MealOrderMediator mediator = new MealOrderMediator(myMeal, orderManager);
+
+
         Command addCheese = new AddItemCommand(myMeal, "Cheese");
         Command removeSalad = new RemoveItemCommand(myMeal, "Salad");
+
 
         orderManager.executeCommand(addCheese);
         orderManager.executeCommand(removeSalad);
 
-        // Undo and redo actions
-        orderManager.undo();
-        orderManager.redo();
+        mediator.undoCommand();
+        mediator.redoCommand();
+
 
         // Display final meal order
         myMeal.displayOrder();
