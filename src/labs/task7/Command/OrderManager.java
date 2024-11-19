@@ -9,7 +9,7 @@ public class OrderManager {
     public void executeCommand(Command command) {
         command.execute();
         commandStack.push(command);
-        redoStack.clear(); // Clear redo stack on new command
+        redoStack.clear();
     }
 
     public void undo() {
