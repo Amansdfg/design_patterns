@@ -5,7 +5,6 @@ public class Main {
         MealOrder mealOrder = new MealOrder();
         MealOrderCaretaker caretaker = new MealOrderCaretaker();
 
-        // Add items and save states
         mealOrder.addItem("Burger", 5.99);
         caretaker.saveState(mealOrder.save());
         System.out.println("Saved State 1: Burger");
@@ -21,7 +20,6 @@ public class Main {
         System.out.println("\nCurrent Order:");
         mealOrder.displayOrder();
 
-        // Undo last change
         MealOrderMemento undoMemento = caretaker.undo(mealOrder);
         if (undoMemento != null) {
             mealOrder.restore(undoMemento);
@@ -29,7 +27,6 @@ public class Main {
         System.out.println("\nAfter Undo:");
         mealOrder.displayOrder();
 
-        // Redo last change
         MealOrderMemento redoMemento = caretaker.redo(mealOrder);
         if (redoMemento != null) {
             mealOrder.restore(redoMemento);
